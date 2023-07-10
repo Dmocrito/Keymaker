@@ -2,17 +2,17 @@
 
 * *Are you tired to use always the same short passwords for everything?*
 
-* *Is your meaty human brain unable to remembering a mere list of arrays with pseudo-aleatory combinations of less than two dozens of characters?*
+* *Is your meaty human brain unable to remember a mere list of arrays with pseudo-aleatory combinations of fewer than two dozen characters?*
 
 * *Is that new fancy website that you tried to log on complaining that yours is too short again?*
 
-Well, if you are familiar with some of these situations, I may have a solution for you!
+If you are familiar with some of these situations, I may have a solution for you!
 
-Behold Ladies and Gentlemen, here I'm glad to introduce the *Keymaker*, a program that takes your human-like easy-to-memorize password and transforms it into a longer, harder and non-human-like password that you can use whatever you wish, always under your responsibility ;b
+Behold! Ladies and Gentlemen, here I'm glad to introduce the *Keymaker*, a program that takes your human-like easy-to-memorize password and transforms it into a longer, harder, and non-human-like password that you can use whatever you wish, always under your responsibility ;b
 
 
 ## What you will find here
-The *Keymaker* is a program that facilitates the generation of strong passwords, even if you still want to keep using your easy-to-memorize ones. The *Keymaker* contains a *MasterKey* that you can customize to guarantee that all your generated new passwords will be unique and only known by you.
+The *Keymaker* program facilitates the generation of strong passwords, even if you still want to keep using your easy-to-memorize ones. The *Keymaker* contains a *MasterKey* that you can customize to guarantee that all your generated new passwords will be unique and only known by you.
 
 To sum up, the program works using three main parts:
 
@@ -35,10 +35,10 @@ To sum up, the program works using three main parts:
 
 1. Download the repository
 
-2. Compile using any of your favorite c++ compiles
+2. Compile using any of your favorite C++ compiles
 
 3. Set your MasterKey
 
 4. Use the new Keys that the Keymaker provides you.
 
-5. Feel the transcendence of using a non-human based 21-lengthed password in all your accounts.
+5. Feel the transcendence of using a non-human-based 21-lengthed password in all your accounts.
