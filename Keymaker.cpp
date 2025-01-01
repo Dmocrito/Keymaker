@@ -3,10 +3,7 @@
 //╠══════════════════════════════════════════════════════════╣
 //║   The KEYMAKER is a program that creates shortcuts       ║
 //║ commands that can be used by other programs to gain      ║
-//║ quick access to various areas within Internet.           ║
-//║                                                          ║
-//║                                                          ║
-//║                              Last update: 07 Jul 12020   ║
+//║ quick access to various areas within the Internet.       ║
 //╟──────────────────────────────────────────────────────────╢
 //║                                                  -mMm-   ║
 //╚══════════════════════════════════════════════════════════╝
@@ -14,6 +11,7 @@
 #include <string>
 #include <fstream>
 #include <streambuf>
+#include <cstdio>
 
 using namespace std;
 
@@ -68,10 +66,24 @@ int main(int narg, char *argc[]){
 		//=== Generate the Key ===
 		Key = GenKey(Lock,pass);
 
-		// Return the Key
-		cout<<"═══ Key ════════════════"<<endl;
-		cout<<Key<<endl;
-		cout<<"════════════════════════"<<endl;
+		// Check if we need to show the key
+		if(narg==3 && string(argc[3])=="-showKey")
+		{
+			// Return the Key
+			cout<<"═══ Key ════════════════"<<endl;
+			cout<<Key<<endl;
+			cout<<"════════════════════════"<<endl;
+		}
+		else
+		{
+			// Copy the string to the clipboard using xclip
+			string command = "echo '" + std::string(Key) + "' | xclip -selection clipboard";
+    		system(command.c_str());
+			
+			cout<<"═══ Key ════════════════"<<endl;
+			cout<<" > Ready to be used"<<endl;
+			cout<<"════════════════════════"<<endl;
+		}
 	}
 	else
 	{
